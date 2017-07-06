@@ -8,7 +8,7 @@
 #
 
 # Set computer name
-COMPUTERNAME="Nick Plekhanov's MBP"
+COMPUTERNAME="Alexander Lee"
 HOSTNAME='mbp'
 LOCALHOSTNAME='mbp'
 
@@ -105,10 +105,11 @@ defaults -currentHost write -g com.apple.trackpad.trackpadCornerClickBehavior -i
 defaults -currentHost write com.apple.trackpad.enableSecondaryClick -bool true
 
 # Set a really fast keyboard repeat rate.
-defaults write -g KeyRepeat -int 0
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Disable press-and-hold for keys in favor of key repeat.
-defaults write -g ApplePressAndHoldEnabled -bool false
+# defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Set language and text formats. (USD and Imperial Units)
 defaults write -g AppleLanguages -array "en" "nl"
@@ -155,7 +156,7 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES; killall Dock
 # Disable icons on the Desktop
 # This will "hide" all the files on the Desktop, but one can still access
 # the files through Finder. Makes things look pretty.
-defaults write com.apple.finder CreateDesktop -bool false && killall Finder
+# defaults write com.apple.finder CreateDesktop -bool false && killall Finder
 
 ###############################################################################
 # Finder
@@ -185,7 +186,7 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Enable auto-correct
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
+# defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool true
 
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
@@ -200,7 +201,7 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 
 # Disable the crash reporter
-defaults write com.apple.CrashReporter DialogType -string "none"
+# defaults write com.apple.CrashReporter DialogType -string "none"
 
 ###############################################################################
 # SSD
