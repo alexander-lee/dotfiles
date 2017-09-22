@@ -73,7 +73,7 @@ as the `git` user credentials, e.g.:
 ```sh
 [user]
   name = Alexander Lee
-  email = alexander.lee@usc.edu
+  email = thealexanderlee@me.com
 ```
 
 ## OS X Defaults
