@@ -1,89 +1,56 @@
 "*":
-  autoprefixer: {}
+  "accents-ui":
+    debugMode: true
+  "activate-power-mode":
+    comboMode:
+      activationThreshold: 100
+      exclamationTexts: [
+        "You're a fucking beast!"
+        ":O"
+        ""
+      ]
+    particles:
+      colours:
+        type: "random"
+      enabled: false
+      size: {}
+      spawnCount: {}
+      totalCount:
+        max: 50
+    playAudio: {}
+    screenShake:
+      maxIntensity: 10
+      minIntensity: 2
   core:
-    disabledPackages: [
-      "react"
+    packagesWithKeymapsDisabled: [
+      "accents-ui"
     ]
+    telemetryConsent: "no"
     themes: [
-      "one-dark-ui"
-      "cobalt2-syntax"
+      "pristine-ui"
+      "robin-hood-syntax"
     ]
   editor:
-    fontFamily: "Menlo"
-    fontSize: 15
-    invisibles:
-      cr: " "
-      eol: " "
-      tab: "⇨"
-    preferredLineLength: 120
-    showInvisibles: true
-    softWrap: true
-    softWrapAtPreferredLineLength: true
-    tabType: "soft"
-  emmet: {}
+    preferredLineLength: 100
+    showIndentGuide: true
   "exception-reporting":
-    userId: "0f4e16a3-5040-01ba-b000-a0793a69fb44"
-  "highlight-line":
-    enableBackgroundColor: false
-  jshint:
-    supportLintingJsx: true
-  linter:
-    showErrorPanel: false
-  "markdown-preview":
-    useGitHubStyle: true
+    userId: "da972500-a463-8d79-fbac-6f6424ad544e"
+  "file-icons":
+    onChanges: true
+  "glacier-dark-ui": {}
+  linter: {}
+  "linter-eslint": {}
+  "linter-ui-default":
+    panelHeight: 53
+    showPanel: true
   minimap:
     plugins:
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
       pigments: true
       pigmentsDecorationsZIndex: 0
-      selection: true
-      selectionDecorationsZIndex: 0
-  "minimap-selection":
-    highlightCursorsLines: true
-  "one-dark-ui": {}
-  "one-light-ui": {}
-  pigments: {}
-  react: {}
   "tree-view": {}
   welcome:
     showOnStartup: false
-".angular.html.text":
-  editor:
-    preferredLineLength: 120
-".cake.source":
-  editor:
-    preferredLineLength: 120
-".cs.source":
-  editor:
-    preferredLineLength: 120
-".csx.source":
-  editor:
-    preferredLineLength: 120
-".git-commit.text":
-  editor:
-    preferredLineLength: 120
-".git-config.source":
-  editor:
-    preferredLineLength: 120
-".git-rebase.text":
-  editor:
-    preferredLineLength: 120
-".js.jsx.react.source":
-  editor:
-    showInvisibles: true
-".js.regexp.replacement.source":
-  editor:
-    preferredLineLength: 120
-".js.regexp.source":
-  editor:
-    preferredLineLength: 120
-".js.source":
-  editor:
-    preferredLineLength: 120
-".json.source":
-  editor:
-    preferredLineLength: 120
-".nant-build.source":
-  editor:
-    preferredLineLength: 120
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false

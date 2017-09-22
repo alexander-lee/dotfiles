@@ -318,11 +318,11 @@ main
 ###############################################################################
 
 # Copy over Atom configs
-#cp -r atom/packages.list $HOME/.atom
+cp -r atom/packages.list $HOME/.atom
 
 # Install community packages
-#apm list --installed --bare - get a list of installed packages
-#apm install --packages-file $HOME/.atom/packages.list
+apm list --installed --bare - get a list of installed packages
+apm install --packages-file $HOME/.atom/packages.list
 
 ###############################################################################
 # Zsh                                                                         #
@@ -340,7 +340,7 @@ ln -s ~/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Install the Solarized Dark theme for iTerm
-open "${HOME}/dotfiles/iterm/themes/Solarized Dark.itermcolors"
+open "${HOME}/dotfiles/iterm/themes/material-design-colors.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
