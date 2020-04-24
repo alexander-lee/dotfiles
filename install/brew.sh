@@ -45,15 +45,16 @@ brew upgrade --all
 
 apps=(
     nvm
-    mongodb
     git
     homebrew/completions/brew-cask-completion
     homebrew/dupes/grep
     homebrew/dupes/openssh
-    python
-    python3
     wget
-    rbenv
+    pyenv
+    fzf  # great for command line history
+    bat  # better cat
+    exa  # better ls
+    diff-so-fancy
     yarn
     watchman
     node
@@ -61,6 +62,7 @@ apps=(
     mysql
     postgresql
     redis
+    tmux
 )
 
 brew install "${apps[@]}"

@@ -1,0 +1,38 @@
+alias sudo='sudo '
+alias subl='code'
+alias be='bundle exec'
+alias python='python3'
+alias pip='pip3'
+alias django='python manage.py'
+alias vi='vim'
+alias gcc='gcc-8'
+alias gs='git status'
+
+alias gitlog='git log --graph --abbrev-commit --decorate --date=relative --format=format:'\''%C(bold blue)%h%C(reset) - %C(bold green)(%cd)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'\'' --all'
+
+bindkey '[C' forward-word
+bindkey '[D' backward-word
+
+
+# Lazy-Load nvm (Cause it's slow as fuck)
+declare -a NODE_GLOBALS=(`find ~/.nvm/versions/node -maxdepth 3 -type l -wholename '*/bin/*' | xargs -n1 basename | sort | uniq`)
+
+NODE_GLOBALS+=("node")
+NODE_GLOBALS+=("nvm")
+
+load_nvm () {
+    export NVM_DIR=~/.nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+}
+
+for cmd in "${NODE_GLOBALS[@]}"; do
+    eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
+done
+
+
+# Use tmux for every new session
+# attach &> /dev/null
+
+if [[ ! $TERM =~ screen ]]; then
+    exec tmux new
+fi

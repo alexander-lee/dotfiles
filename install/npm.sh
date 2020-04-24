@@ -34,20 +34,8 @@ npm config set save-exact = true
 # To list globally installed npm packages and version: npm list -g --depth=0
 #
 # Some descriptions:
-#
-# diff-so-fancy — sexy git diffs
-# git-recent — Type `git recent` to see your recent local git branches
-# git-open — Type `git open` to open the GitHub page or website for a repository
 packages=(
-    diff-so-fancy
-    git-recent
-    git-open
-    gulp
     http-server
-    servedir
-    flow-bin
-    flow-typed
-    npm-check-updates
     webpack
     nodemon
     svgo

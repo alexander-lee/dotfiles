@@ -16,21 +16,18 @@ So, to recap, the install script will:
 
 ## Features
 
-- Handy [binary scripts](bin/)
-- [Stop words](dict/) lists that I use with Marked 2
 - Git aliases
 - zsh aliases
-- Custom zsh theme with Git and battery status, etc: [nicktheme](zsh/themes/nick.zsh-theme)
 - Sensible [OS X defaults](osx/set-defaults.sh)
 - [Install script](setup.sh)
 
 ## Installation
 
 ```sh
-$ git clone https://github.com/alexander-lee/dotfiles.git ~/dotfiles
-$ cd ~/dotfiles
-$ chmod +x setup.sh
-$ ./setup.sh
+git clone https://github.com/alexander-lee/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+chmod +x setup.sh
+./setup.sh
 ```
 
 ## Remotely install using curl

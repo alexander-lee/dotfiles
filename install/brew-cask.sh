@@ -7,20 +7,16 @@ brew tap caskroom/versions
 
 # Install packages
 apps=(
+    chromium
+    insomnia
     dropbox
     spectacle
     flux
     iterm2
-    atom
     firefox
     google-chrome
-    google-chrome-canary
-    malwarebytes-anti-malware
-    screenflow
     spotify
-    skype
     slack
-    transmit
     ngrok
 )
 
