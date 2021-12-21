@@ -1,0 +1,26 @@
+[filter "lfs"]
+        clean = git-lfs clean %f
+        smudge = git-lfs smudge %f
+        required = true
+[user]
+        name = alexander-lee
+        email = thealexanderlee@me.com
+[core]
+        editor = vim
+[push]
+        default = simple
+[color]
+        ui = auto
+[alias]
+        rim = rebase -i main
+        alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+        sha = "!f() { commits=${1-0}; git rev-parse HEAD~$commits; }; f"
+        cm = checkout master
+        co = checkout
+        br = branch
+        rc = rebase --continue
+        ca = commit --amend
+        s = status
+        ret = rebase --edit-todo
+        unfuck = reset --hard @{u}
+        cmr = ! git checkout main && git pull && git checkout - && git rebase main
