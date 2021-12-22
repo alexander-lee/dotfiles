@@ -1,3 +1,5 @@
+#!/bin/bash
+
 code --install-extension akamud.vscode-theme-onedark
 code --install-extension christian-kohler.npm-intellisense
 code --install-extension christian-kohler.path-intellisense
@@ -14,7 +16,6 @@ code --install-extension matklad.rust-analyzer
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-dotnettools.csharp
 code --install-extension ms-python.python
-code --install-extension ms-vscode.csharp
 code --install-extension pranaygp.vscode-css-peek
 code --install-extension rust-lang.rust
 code --install-extension shardulm94.trailing-spaces

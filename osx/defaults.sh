@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Require password immediately after sleep or screen saver.
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
@@ -13,3 +15,7 @@ defaults write com.apple.terminal StringEncodings -array 4
 # Set a really fast keyboard repeat rate.
 defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
+
+# Don’t display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+

@@ -1,9 +1,9 @@
 session_name: dual
+start_directory: /~
 windows:
-  - window_name: dual
-    layout: tiled
-    shell_command_before:
-      - cd ~
-    panes:
-      -
-      -
+- layout: even-horizontal
+  options:
+    automatic-rename: on  
+  panes:
+    -
+    -
