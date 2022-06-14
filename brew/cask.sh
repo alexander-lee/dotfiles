@@ -1,19 +1,23 @@
 #!/bin/bash
 
 apps=(
-    iterm2
-    dropbox
-    slack
-    google-chrome
-    visual-studio-code
-    spectacle
     alfred
-    spotify
     discord
-    steam
+    dropbox
+    docker
+    figma
+    flux
+    google-chrome
+    google-drive
     insomnia
-    zoom
+    iterm2
     ngrok
+    slack
+    spectacle
+    spotify
+    steam
+    visual-studio-code
+    zoom
 )
 
 brew install --cask "${apps[@]}"

@@ -1,1 +1,5 @@
 alias ls="exa -al"
+
+kubeshell() {
+  kubectl exec -it $1 -- /bin/sh
+}

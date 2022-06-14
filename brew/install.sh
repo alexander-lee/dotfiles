@@ -24,6 +24,8 @@ apps=(
     tmuxp
     exa
     rustup
+    mysql
+    postgresql
     pyenv
 )
 
