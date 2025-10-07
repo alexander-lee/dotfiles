@@ -1,4 +1,4 @@
-alias ls="exa -al"
+alias ls="eza -al"
 
 # SQLx Offline Cache Binding
 alias sqlx-prepare="cargo sqlx prepare --merged -- --all-targets --all-features"

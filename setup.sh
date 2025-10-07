@@ -205,8 +205,11 @@ printf "\n"
 echo "=========================="
 echo "|          tmux          |"
 echo "=========================="
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 mkdir -p ~/.tmuxp
 cp -a $DOTFILES_DIR/tmuxp/. ~/.tmuxp/
+
+tmux source-file ~/.tmux.conf
 
 printf "\nAlmost done..."
 printf "\n\nType \e[0;33msource ~/.zshrc\e[0m"

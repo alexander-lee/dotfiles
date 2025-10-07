@@ -15,7 +15,6 @@ apps=(
     iterm2
     ngrok
     slack
-    spectacle
     spotify
     steam
     visual-studio-code
