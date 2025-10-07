@@ -1,5 +1,8 @@
 alias ls="exa -al"
 
+# SQLx Offline Cache Binding
+alias sqlx-prepare="cargo sqlx prepare --merged -- --all-targets --all-features"
+
 kubeshell() {
   kubectl exec -it $1 -- /bin/sh
 }

@@ -7,6 +7,7 @@
         email = thealexanderlee@me.com
 [core]
         editor = vim
+	ignorecase = false
 [push]
         default = simple
 [color]
@@ -24,3 +25,9 @@
         ret = rebase --edit-todo
         unfuck = reset --hard @{u}
         cmr = ! git checkout main && git pull && git checkout - && git rebase main
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true

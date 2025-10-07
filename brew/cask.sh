@@ -2,11 +2,13 @@
 
 apps=(
     alfred
+    anaconda
     discord
-    dropbox
     docker
+    docker-desktop
     figma
     flux
+    flux-app
     google-chrome
     google-drive
     insomnia
@@ -21,4 +23,3 @@ apps=(
 )
 
 brew install --cask "${apps[@]}"
-
